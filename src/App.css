@@ -1,38 +1,327 @@
-.App {
-  text-align: center;
+/* /* Navy	#0a192f 
+Light Navy	#172a45 
+Dark Grey	#333f58 
+Slate	#8892b0 
+Light Slate	#a8b2d1
+Lightest Slate	#ccd6f6
+White	#e6f1ff
+Green #64ffda */
+
+
+
+
+/* #NAVGATION# */
+
+.navContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top:0px;
+  color:white;
+  background-color: #0a192f;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  padding: 0px, 50px
+}
+.navItem{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+}
+.navLinks{
+  padding: 10px;
+  color: #64ffda;
+  font-size: 1em;
+  text-decoration: none;
+}
+h3{
+  color: rgb(119, 254, 233);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+}
+h2{
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* MAIN CONTENT */
+
+.ContentDiv{
+background-color: #0a192f;
+/* padding:0px 150px 0px 150px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* TOP MAIN CONTENT */
+
+.topMain{
+  padding: 150px 100px;
+
+}
+.smallText{
+color: #64ffda;
+font-size: 1.5em;
+}
+.nameText{
+  font-size: 5rem;
+  color: #ccd6f6;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.topContent{
+  color: #8892b0;
+  width: 80%;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+button{
+  padding:20px;
+  border-radius: 3px;
+  color: #8892b0;
+  font-size: 1em;
+  border: 1px solid #64ffda;
+  background-color: #0a192f;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px 10px;
+
+}
+/* ABOUT */
+.aboutContainer{
+  padding: 100px 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0px auto;
+}
+.titleAndAbout{
+  width:80%;
+}
+.title{
+  color: #8892b0;
+  font-weight: 500;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: left;
+}
+.line{
+  width: 50%;
+  margin: 10px 0px 0px 30px;
+  border-bottom:1px solid #a8b2d175;
+  height:1px;
+  align-self: stretch;}
+.aboutText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  color: #8892b0;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  /* font-size: 1.5em; */
+}
+.topAboutContainer{
+  right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.workingWithText{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 0px 20px 20px;
+  margin: 20px 0px 0px 80px;
+  color:  #0a192f;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #a8b2ce;
+  border-radius: 3px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px 10px;
+}
+.lindseyImage{
+  /* border: 2px solid red; */
+  border-radius: 3px;
+  margin-left: 5em;
+  margin-top: 0em;
+  height: 20em;
+  vertical-align: middle;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+}
+.lindseyImageContainerMob{
+  visibility: hidden;
+}
+/* ####PROJECTS### */
+.projectContainer{
+  padding: 0px 100px 50px;
+  color: #8892b0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+}
+.projectTitle{
+  color: #8892b0;
+  font-weight: 500;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: left;;
+}
+.projectItem{
+  margin: 20px 0px;
+}
+.fab{
+color: #0a192f;
+font-size: 3em;
+padding: 10px
+}
+.table  {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tright{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* FOOTER */
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0px;
+  color:white;
+  background-color: #0a192f;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px 10px;
+  padding: 0px, 50px
+}
+/* MEDIAQ */
+
+@media screen and (max-width: 1000px) {
+  .topContent{
+    width: 80%;
+    border:2px solid green;}
+  /* .topMain{
+    padding: 150px 100px;
+  } */
+  .aboutContainer{
+    padding: 50px 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .ContentDiv{
+    padding: 0px 20px;
+  }
+  .topAboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .topMain{
+    padding: 150px 100px 100px;
+  }
+  .title{
+    text-align: center;
+  }
+  .aboutText{
+    text-align: justify;
+  }
+  .lindseyImage{
+   margin:20px;
+   padding: 20px;
+   width: 50%;
+   height: 50%;
+  }
+  .lindseyImageContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .workingWithText{
+    padding:20px;
+    margin: 20px;
+    color: #0a192f
+  }
+  .workingWithText1{
+    padding:20px;
+    margin: 20px;
+    color: #0a192f
+  }
+  .imageAndWorkingContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectContainer{
+    padding-bottom: 150px;
+  }
+  .footerContainer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font-size: .75em;
+  }
+
+}
+@media screen and (max-width: 680px) {
+  .topContent{
+    text-align: justify;
+    border:2px solid red;
+    width: 100%;
+  }
+  .aboutContainer{
+    padding:20px
+  }
+  .topMain{
+    padding: 150px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nameText{
+    text-align: center;
+  }
+  .ContentDiv{
+    padding: 0px 50px
+  }
+  .navContainer{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+  }
+  button{
+    align-content: center;
+    width: 50%;
+  }
+
+  /* ##### */
+  .title{
+    text-align: center;
+  }
+  .topAboutContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .lindseyImage{
+    display: none;
+  }
+
+  /* ##### */
+  .footerContainer{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    font-size: .5em;
   }
 }
