@@ -208,10 +208,11 @@ padding: 10px
 @media screen and (max-width: 1000px) {
   .topContent{
     width: 80%;
-    border:2px solid green;}
+    /* border:2px solid green;*/
+  }
   /* .topMain{
     padding: 150px 100px;
-  } */
+  }*/
   .aboutContainer{
     padding: 50px 50px;
   }
@@ -276,7 +277,7 @@ padding: 10px
 @media screen and (max-width: 680px) {
   .topContent{
     text-align: justify;
-    border:2px solid red;
+    /* border:2px solid red; */
     width: 100%;
   }
   .aboutContainer{
@@ -302,7 +303,7 @@ padding: 10px
   }
   button{
     align-content: center;
-    width: 50%;
+    width: 75%;
   }
 
   /* ##### */
@@ -312,6 +313,12 @@ padding: 10px
   .topAboutContainer{
     display: flex;
     flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .aboutContainer{
+    padding: 0px;
+    margin: 0px;
   }
   .lindseyImage{
     display: none;
