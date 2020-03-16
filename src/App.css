@@ -38,6 +38,9 @@ Green #64ffda */
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   text-decoration: none;
 }
+.navMob{
+  display: none;
+}
 .resumeLink{
   border-radius: 3px;
   border: 1px solid rgb(119,254,233)
@@ -55,11 +58,12 @@ h2{
   border-bottom: 1px solid rgb(129, 112, 133);
 }
 .blink{
-  animation:blinkingText 2s infinite;
+  animation:blinkingText 5s;
 }
 @keyframes blinkingText{
-  0%{     color: rgba(119, 254, 234, .8);    }
-  100%{   color: transparent;    }
+    0%{   color: transparent;    }
+    50%{     color: rgba(119, 254, 234, 1);    }
+    100%{     color: transparent;    }
 }
 .icon{
   max-width: 75px;
@@ -322,6 +326,21 @@ padding: 10px
     justify-content: center;
     align-items: center;
   }
+  .navMob{
+    display: inline;
+    text-align: center;
+    min-width: 100%;
+  }
+  .navLinks{
+    width: 100%;
+    font-size: large;
+  }
+  .navItem{
+    display: none;
+  }
+  .dropdown-toggle::after{
+    display: none !important;
+  }
   .nameText{
     text-align: center;
   }
@@ -337,9 +356,9 @@ padding: 10px
     align-content: center;
     width: 75%;
   }
-.icon{
-  display: none;
-}
+  .icon{
+    display: none;
+  }
   /* ##### */
   .title{
     text-align: center;
