@@ -4,19 +4,19 @@ const Navigation=()=>{
     return(
         <div className = "navContainer">
             <div className="navItem">
-                <a href="#" className="navLinks">about</a>
+                <a href="#about" className="navLinks">ABOUT</a>
             </div>
 
             <div className="navItem">
-                <a href="#" className="navLinks">work</a>
+                <a href="#myWork" className="navLinks">WORK</a>
             </div>
 
             <div className="navItem">
-                <a href="#" className="navLinks">contact</a>
+                <a href="#contact" className="navLinks">CONTACT</a>
             </div>
 
             <div className="navItem">
-                <a href="#" className="navLinks">resume</a>
+                <a href="#resume" className="navLinks resumeLink">RESUME</a>
             </div>
         </div>
         

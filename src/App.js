@@ -9,7 +9,7 @@ import { Projects } from "./components/projects"
 function App() {
   return (
     <div>
-            
+      
       <Navigation/>
       <div className="ContentDiv">
           <TopMain/>

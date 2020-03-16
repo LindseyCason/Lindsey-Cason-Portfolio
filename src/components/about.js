@@ -2,8 +2,9 @@ import React from 'react'
 
 export const About=()=>{
     return(
-        <div className="aboutContainer">
-            <div className="topAboutContainer">
+        <div className="aboutContainer" >
+            <div className="topAboutContainer"data-aos="fade-left" data-aos-easing="linear"
+        data-aos-duration="1000" id="about">
                 <div className="titleAndAbout">
                     <div className="title">
                         <div>About Me</div><div className='line'/>
@@ -55,6 +56,9 @@ export const About=()=>{
                     </div>
                 </div>
             </div>
+            <div className="sectionBreak" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1000"><div className="blink" style={{color:"rgb(119, 254, 233)", textAlign:"center"}}>&#x2B07; scroll &#x2B07;</div></div>
+
         </div>
     )
 }

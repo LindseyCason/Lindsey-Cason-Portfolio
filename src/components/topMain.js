@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 
 export const TopMain=()=>{
     return(
-        <div className="topMain">
+        <div className="topMain" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1000">
+
             <div className="smallText">
                 Hi, my name is
             </div>
@@ -15,6 +18,8 @@ export const TopMain=()=>{
                 </p>
             </div>
             <button>Let's Connect</button>
+            <div className="sectionBreak" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1000" id="about"><div className="blink" style={{color:"rgb(119, 254, 233)", textAlign:"center"}}>&#x2B07; scroll &#x2B07;</div></div>
         </div>
 
     )

@@ -2,8 +2,10 @@ import React from 'react'
 
 export const Projects=()=>{
     return(
-        <div className="projectContainer">
+        <div className="projectContainer" id="myWork" data-aos="fade-right" data-aos-easing="linear"
+        data-aos-duration="1000">      
             <div className="projectTitle">
+     
                 <div>My Work</div><div className='line'/>
             </div>
             <div className="projects">

@@ -15,7 +15,6 @@ Green #64ffda */
 .navContainer{
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   position: fixed;
   top:0px;
   color:white;
@@ -23,7 +22,7 @@ Green #64ffda */
   width: 100%;
   height: 70px;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
-  padding: 0px, 50px
+  padding: 50px, 50px
 }
 .navItem{
   display: flex;
@@ -35,41 +34,63 @@ Green #64ffda */
   padding: 10px;
   color: #64ffda;
   font-size: 1em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   text-decoration: none;
+}
+.resumeLink{
+  border-radius: 3px;
+  border: 1px solid rgb(119,254,233)
 }
 h3{
   color: rgb(119, 254, 233);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   font-size: medium;
 }
 h2{
   text-align: left;
 }
+.sectionBreak{
+  padding-top: 15vh;
+  border-bottom: 1px solid rgb(129, 112, 133);
+}
+.blink{
+  animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: rgba(119, 254, 234, .8);    }
+  100%{   color: transparent;    }
+}
+
 
 /* MAIN CONTENT */
 
 .ContentDiv{
 background-color: #0a192f;
-/* padding:0px 150px 0px 150px; */
+padding:150px, 50px;
 }
 
 /* TOP MAIN CONTENT */
 
 .topMain{
-  padding: 150px 100px;
+  padding: 150px;
+  min-height: 80vh;
 
 }
 .smallText{
 color: #64ffda;
+padding-bottom: 5vh;
+padding-top: 5vh;
 font-size: 1.5em;
 }
 .nameText{
   font-size: 5rem;
+  padding-bottom: 5vh;
   color: #ccd6f6;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .topContent{
   color: #8892b0;
+  padding-bottom: 5vh;
   width: 80%;
   font-size: 1.5em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -88,10 +109,12 @@ button{
 }
 /* ABOUT */
 .aboutContainer{
-  padding: 100px 100px;
+  padding: 0vh 100px;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   margin: 0px auto;
+  
 }
 .titleAndAbout{
   width:80%;
@@ -156,10 +179,12 @@ button{
 }
 /* ####PROJECTS### */
 .projectContainer{
-  padding: 0px 100px 50px;
+  padding: 15vh 100px 50px;
   color: #8892b0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2em;
+  min-height: 80vh;
+
 }
 .projectTitle{
   color: #8892b0;
@@ -322,6 +347,11 @@ padding: 10px
   }
   .lindseyImage{
     display: none;
+  }
+
+  .projectContainer{
+    padding: 15vh 20px 50px;
+
   }
 
   /* ##### */
