@@ -345,13 +345,17 @@ padding: 10px
     max-height: 100px;
   }
   .mobnavLinks{
-    width: 50vw;
+    width: 20vw;
     max-height: 50%;
     font-size: large;
     padding:.1em;
-    color: rgb(255, 255, 255);
+    background-color: rgb(46, 53, 92);
+    border-radius: 3px;
     text-decoration: none;
     text-align: center;
+    transform: rotate(30deg);
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   }
 
