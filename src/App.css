@@ -38,6 +38,15 @@ Green #64ffda */
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   text-decoration: none;
 }
+.navIcons{
+
+  padding: 10px;
+  color: #64ffda;
+  font-size: 1.5em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  text-decoration: none;
+
+}
 .navMob{
   display: none;
 }
@@ -273,8 +282,8 @@ padding: 10px
   .lindseyImage{
    margin:20px;
    padding: 20px;
-   width: 50%;
-   height: 50%;
+   height: fit-content /2;
+   width: fit-content /2;
   }
   .lindseyImageContainer{
     display: flex;
@@ -328,6 +337,7 @@ padding: 10px
   }
   .navMob{
     display: flex;
+    flex-direction: row !important;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -342,9 +352,10 @@ padding: 10px
   }
 
   .dropdown-menu.show{
-    background-color: #8892b0;
+    background-color: rgba(255, 255, 255, 0.3);
     width: 50vw;
     align-self: center !important;
+   margin-bottom: 25px;
 
   }
 
