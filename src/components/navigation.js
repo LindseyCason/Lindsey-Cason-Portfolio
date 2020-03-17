@@ -26,10 +26,10 @@ const Navigation=()=>{
             </div>
 
             <NavDropdown title={<i class="fas fa-bars burg" style={{fontSize: 40, color: "white"}}/>} id="basic-nav-dropdown" className="Nav-Drop navMob">
-                <NavDropdown.Item eventKey="4.2" href="#about" className="navLinks">ABOUT</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.1" href="#myWork" className="navLinks">WORK</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.2"href="#contact" className="navLinks">CONTACT</NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.3" href="#resume" className="navLinks">RESUME</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.2" href="#about" className="mobnavLinks">ABOUT</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.1" href="#myWork" className="mobnavLinks">WORK</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.2"href="#contact" className="mobnavLinks">CONTACT</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.3" href="#resume" className="mobnavLinks">RESUME</NavDropdown.Item>
             </NavDropdown>
         </div>
         
