@@ -47,7 +47,7 @@ Green #64ffda */
   text-decoration: none;
 
 }
-.navMob{
+.mobNav{
   display: none;
 }
 .resumeLink{
@@ -335,36 +335,31 @@ padding: 10px
     justify-content: center;
     align-items: center;
   }
-  .navMob{
+  .mobNav{
     display: flex;
-    flex-direction: row !important;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     min-width: 50vw;
+    max-height: 100px;
   }
   .mobnavLinks{
-    width: 100%;
+    width: 100vw;
+    max-height: 50%;
     font-size: large;
-    color: black;
-    text-align: center !important;
+    padding:.25em 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  }
-
-  .dropdown-menu.show{
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 50vw;
-    align-self: center !important;
-   margin-bottom: 25px;
-
   }
 
   .navItem{
     display: none;
   }
-  .dropdown-toggle::after{
-    display: none !important;
-  }
+
   .nameText{
     text-align: center;
   }
@@ -375,6 +370,10 @@ padding: 10px
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
+    height: 23vh;
+    border-bottom: 1px solid powderblue;
+    position: fixed;
+    background-color: #0a192fde;
   }
   button{
     align-content: center;
