@@ -56,8 +56,6 @@ export const About=()=>{
                     </div>
                 </div>
             </div>
-            <div className="sectionBreak" data-aos="fade-down" data-aos-easing="linear"
-        data-aos-duration="1000"><div className="blink" style={{color:"rgb(119, 254, 233)", textAlign:"center"}}>&#x2B07; scroll &#x2B07;</div></div>
 
         </div>
     )
