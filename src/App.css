@@ -337,8 +337,7 @@ padding: 10px
   }
   .mobNav{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -370,7 +369,7 @@ padding: 10px
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
-    height: 23vh;
+    height: 13vh;
     border-bottom: 1px solid powderblue;
     position: fixed;
     background-color: #0a192fde;
