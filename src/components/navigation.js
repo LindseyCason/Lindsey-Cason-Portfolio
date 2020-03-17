@@ -38,13 +38,25 @@ const Navigation=()=>{
                 <><NavDropdown.Item eventKey="4.2"href="#contact" className="mobnavLinks">CONTACT</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.3" href="#resume" className="mobnavLinks">RESUME</NavDropdown.Item></>
             </NavDropdown> */}
-            <div className="mobNav">
-                {/* <div className="mobNavMenu"><i className="fas fa-bars burg" style={{fontSize: 40, color: "white"}}/></div> */}
-                    
-                    <div className="mobnavLinks"> <a href="#about" className="navLinks">ABOUT</a></div>
+            <div className="menu-wrap">
+                <input className="toggler" type="checkbox"></input>
+                <div className="hamburger"><div></div></div>
+                <div className="menu">
+                    <div>
+                        <div>
+                            <ul>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#myWork">MY WORK</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="#resume">RESUME</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    {/* <div className="mobnavLinks"> <a href="#about" className="navLinks">ABOUT</a></div>
                     <div className="mobnavLinks"><a  href="#myWork" className="navLinks">WORK</a></div>
                     <div className="mobnavLinks"><a href="#contact" className="navLinks">CONTACT</a></div>
-                    <div className="mobnavLinks"><a href="#resume" className="navLinks">RESUME</a></div>
+                    <div className="mobnavLinks"><a href="#resume" className="navLinks">RESUME</a></div> */}
                 </div>
             </div>
     
