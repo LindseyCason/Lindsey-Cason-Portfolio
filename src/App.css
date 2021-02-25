@@ -229,6 +229,7 @@ padding:150px, 50px;
 
 .topMain{
   padding: 150px;
+  padding-bottom: 85px;
   min-height: 80vh;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
 
