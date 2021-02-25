@@ -16,7 +16,9 @@ export const TopMain = () => {
           building high-quality websites and applications.
         </p>
       </div>
-      <button className="resumeLink">Let's Connect</button>
+      <form action="#contact" method="get" target="_blank">
+        <button className="resumeLink">Let's Connect</button>
+      </form>
     </div>
   );
 };

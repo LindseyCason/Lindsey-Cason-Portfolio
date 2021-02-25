@@ -12,7 +12,9 @@ export const About = () => {
       >
         <div className="titleAndAbout">
           <div className="title">
-            <div>About Me</div>
+            <a href id="about">
+              <div>About Me</div>
+            </a>
           </div>
           <div className="aboutText">
             <p>
@@ -45,6 +47,7 @@ export const About = () => {
             <img
               src="https://avatars2.githubusercontent.com/u/29295649?s=460&u=6149da2d563258cac24f923c71ec5d14f353464b&v=4"
               className="lindseyImage"
+              alt="Headshot of Lindsey"
             />
           </div>
 

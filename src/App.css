@@ -20,6 +20,7 @@ Green #64ffda */
   color:white;
   background-color: #0a192f;
   width: 100%;
+  max-width: 1080px;
   z-index: 4;
   height: 70px;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
@@ -219,10 +220,23 @@ padding: 1rem
 
 
 /* MAIN CONTENT */
+html{
+  background-color :#0a192f;
+  /* background-image: url(../src/utils/11828.jpg); */
+
+}
+body{
+  max-width: 1080px; 
+	margin: 0 auto !important; 
+  float: none !important;
+  /* box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px; */
+
+}
 
 .ContentDiv{
 background-color: #0a192f;
 padding:150px, 50px;
+
 }
 
 /* TOP MAIN CONTENT */
@@ -281,6 +295,37 @@ button{
 .titleAndAbout{
   width:80%;
 }
+.titleContact{
+  color: #0a192f;
+  font-weight: 500;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  transform: skewY(-365deg);
+  width: 80%;
+  z-index: 1;
+  box-shadow: rgba(2, 12, 27, 1) -10px 11px 19px -2px;
+  border-radius: 3px;
+  background-image: linear-gradient(90deg, #8892b0, transparent);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+.contactList{
+  list-style: none;
+
+}
+.contactContent{
+  /* info from top content */
+  color: #8892b0;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  width: 100%;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-size: 1.5em;
+
+}
 .title{
     color: #0a192f;
     font-weight: 500;
@@ -320,9 +365,18 @@ button{
 }
 .topAboutContainer{
   right: 150px;
+  padding-top: 70px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+.contactContainer{
+  /* right: 150px; */
+  justify-content: center;
+  padding-top: 70px;
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
 }
 .workingWithText{
   display: flex;
@@ -405,7 +459,7 @@ padding: 10px
   background-color: #0a192f;
   width: 100%;
   height: 70px;
-  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px 10px;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
   padding: 0px, 50px
 }
 /* MEDIAQ */
