@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import R1 from "../utils/LindseyCasonResume1.jpg";
+import R2 from "../utils/LindseyCasonResume2.jpg";
+import R3 from "../utils/LindseyCasonResume3.jpg";
 
 export const Resume = () => {
   return (
     <div>
       <div className="overlay">
         <div className="ContentDiv">
-          <div className="title">Resume Information</div>
-          <div className="topContent">THIS IS MY Resume PAGE!</div>
+          <div className="topContent"> </div>
+          <div className="title titleResume">Resume Information</div>
+          <div className="resumeContainer">
+            <img src={R1} alt="resume page 1" className="resumePage" />
+            <img src={R2} alt="resume page 2" className="resumePage" />
+            <img src={R3} alt="resume page 3" className="resumePage" />
+          </div>
         </div>
       </div>
     </div>

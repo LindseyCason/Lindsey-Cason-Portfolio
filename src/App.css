@@ -320,10 +320,13 @@ button{
   /* info from top content */
   color: #8892b0;
   padding-bottom: 5vh;
-  padding-top: 5vh;
+  padding: 5vh;
+  margin-bottom: 5vh;
   width: 100%;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   font-size: 1.5em;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px 10px;
+
 
 }
 .title{
@@ -462,6 +465,23 @@ padding: 10px
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
   padding: 0px, 50px
 }
+
+/*RESUME*/
+.resumeContainer{
+display: flex;
+flex-direction: column;
+
+};
+
+.resumePage{
+  max-width: 50%;
+
+}
+.titleResume{
+  margin-top: 70px;
+}
+
+
 /* MEDIAQ */
 
 @media screen and (max-width: 1000px) {
@@ -545,6 +565,11 @@ padding: 10px
     text-align: justify;
     /* border:2px solid red; */
     width: 100%;
+  }
+
+  .titleResume{
+    padding-top: 70px;
+    display: none;
   }
 
   .aboutContainer{
