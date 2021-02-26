@@ -6,7 +6,6 @@ import { About } from "./components/about";
 import { Projects } from "./components/projects";
 import { Resume } from "./components/resume";
 import { Navigation } from "./components/navigation";
-import Contact from "./components/Contact";
 import Home from "./components/Home";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
               <Navigation />
               <Route path="/" exact component={Home} />
               <Route path="/about" exact component={About} />
-              <Route path="/contact" exact component={Contact} />
               <Route path="/projects" exact component={Projects} />
               <Route path="/resume" exact component={Resume} /> <Footer />
             </div>

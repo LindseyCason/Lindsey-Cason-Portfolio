@@ -1,4 +1,5 @@
 import React from "react";
+import { Contact } from "./Contact";
 
 export const TopMain = () => {
   return (
@@ -16,9 +17,7 @@ export const TopMain = () => {
           building high-quality websites and applications.
         </p>
       </div>
-      <form action="#contact" method="get" target="_blank">
-        <button className="resumeLink">Let's Connect</button>
-      </form>
+      <Contact />
     </div>
   );
 };

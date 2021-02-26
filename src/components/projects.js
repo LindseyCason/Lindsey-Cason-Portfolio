@@ -22,7 +22,7 @@ function AlertDismissible() {
           </Button>
           <hr></hr>
           <Button onClick={() => setShow(false)} variant="outline-info">
-            Just close
+            X
           </Button>
         </div>
       </Alert>

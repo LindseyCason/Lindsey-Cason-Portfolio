@@ -54,20 +54,6 @@ export const About = () => {
           <div className="workingWithText">
             My Recent Technologies
             <div className="table">
-              {/* <div className="tleft">
-                            <div>
-                            <div>Javascript</div>
-                            <div>HTML</div>
-                            <div>CSS</div>
-                            <div>ReactJS</div>
-                            </div>
-                            <div>
-                            <div>Python</div>
-                            <div>Java</div>
-                            <div>Node.js</div>
-                            <div>MongoDB</div>
-                            </div>
-                        </div> */}
               <div className="tright">
                 <div>
                   <i class="fab fa-js-square"></i>
