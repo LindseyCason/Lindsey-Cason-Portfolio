@@ -571,6 +571,9 @@ flex-direction: column;
     padding-top: 70px;
     display: none;
   }
+  .resumePage{
+    width: 100%;
+  }
 
   .aboutContainer{
     padding:20px
