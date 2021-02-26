@@ -1,14 +1,8 @@
 import React from "react";
 import L from "../utils/L.png";
-// import Nav from "react-bootstrap/Nav";
+import { Contact } from "./Contact";
 
 export const Navigation = () => {
-  const dropdownShow = () => {
-    var el = document.getElementById("mobNavA");
-    console.log(el);
-    // el.classList.add("NavDropdownOff")
-  };
-
   return (
     <div className="navContainer">
       <img src={L} alt="L logo" className="icon" />
@@ -31,9 +25,7 @@ export const Navigation = () => {
       </div>
 
       <div className="navItem">
-        <a href="/contact" className="navLinks navDesk">
-          CONTACT
-        </a>
+        <Contact />
       </div>
 
       <div className="navItem">
@@ -52,16 +44,20 @@ export const Navigation = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#about">ABOUT</a>
+                  <a href="/">HOME</a>
+                </li>
+
+                <li>
+                  <a href="/about">ABOUT</a>
                 </li>
                 <li>
-                  <a href="#myWork">MY WORK</a>
+                  <a href="/projects">MY WORK</a>
                 </li>
                 <li>
-                  <a href="#contact">CONTACT</a>
+                  <a href="/resume">RESUME</a>
                 </li>
                 <li>
-                  <a href="#resume">RESUME</a>
+                  <Contact />
                 </li>
               </ul>
             </div>

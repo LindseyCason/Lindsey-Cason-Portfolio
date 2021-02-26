@@ -1,46 +1,64 @@
 import React from "react";
+import { render } from "react-dom";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
-function Contact() {
-  return (
-    <div className="contactContainer">
-      <div
-        className="contactContainer"
-        data-aos="fade-left"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
-        id="contact"
-      >
-        <div>
-          {/* <div className="c"> */}
-          <div className="ContentDiv">
-            <div className="titleContact">LET'S CHAT!</div>
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center",
+};
 
-            <div className="contactContent">
-              <ul className="contactList">
-                <li>
-                  Email:
-                  <a href="mailto:lindseyacason@gmail.com">
-                    LindseyACason@gmail.com
-                  </a>
-                </li>
+export class Contact extends React.Component {
+  state = {
+    open: false,
+  };
 
-                <li>
-                  Text/Call: <a href="tel:+15045643792">(504) 564-3792</a>
-                </li>
-                <li>
-                  LinkedIn:{" "}
-                  <a href="https://www.linkedin.com/in/lindseyacason/">
-                    lindseyacason
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    const { open } = this.state;
+    return (
+      <div style={styles}>
+        <button
+          onClick={this.onOpenModal}
+          className="navLinks navDesk resumeLink"
+        >
+          Let's Connect!
+        </button>
+        <Modal open={open} onClose={this.onCloseModal} className="contactModal">
+          <p className="modalTitle">Let's Connect!</p>
+          <p className="aboutText">
+            Feel free to drop me a line! You have a few options below...
+          </p>
+          <h3 className="modalTextH">Email</h3>
+          <p className="aboutText">
+            <a href="mailto:LindseyACason@gmail.com" className="modalTextL">
+              LindseyACason@gmail.com
+            </a>
+          </p>
+          <h3 className="modalTextH">Call/Text</h3>
+          <p className="aboutText">
+            <a href="tel:+15045643792" className="modalTextL">
+              504-564-3792
+            </a>
+          </p>
+          <h3 className="modalTextH">LinkedIn</h3>
+          <p className="aboutText">
+            <a
+              href="https://www.linkedin.com/in/lindseyacason/"
+              className="modalTextL"
+            >
+              LindseyACason
+            </a>
+          </p>
+        </Modal>
       </div>
-    </div>
-    // </div>
-  );
+    );
+  }
 }
-
-export default Contact;

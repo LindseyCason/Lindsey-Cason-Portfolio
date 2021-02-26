@@ -257,6 +257,37 @@ font-size: 1.5em;
 font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
 
 }
+
+/* MODAL */
+.modalTextH{
+  color: #64ffda;
+  padding-top: .5vh;
+  font-size: 1.5em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+.modalTextL{
+  color:#ccd6f6;
+  padding-top: .5vh;
+  font-size: 1em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  text-decoration: none;
+}
+.modalTitle{
+  font-size: 4rem;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  color: #ccd6f6;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.react-responsive-modal-modal{
+  background-color:#0a192f !important;
+  width: 30vw;
+  text-align: center;
+}
+.react-responsive-modal-closeButton{
+  background-color: #ccd6f6 !important;
+}
 .nameText{
   font-size: 5rem;
   padding-bottom: 5vh;
@@ -295,6 +326,7 @@ button{
 .titleAndAbout{
   width:80%;
 }
+
 .titleContact{
   color: #0a192f;
   font-weight: 500;
@@ -418,6 +450,8 @@ button{
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   font-size: 1em;
   min-height: 80vh;
+  z-index: 10 !important;
+  
 
 }
 .projectTitle{
@@ -560,12 +594,33 @@ flex-direction: column;
 @media screen and (max-width: 680px) {
   .menu-wrap{
     visibility: visible;
+    z-index: 4;
+    max-height: 70px;
+  }
+  .menu{
+    visibility: collapse;
   }
   .topContent{
     text-align: justify;
     /* border:2px solid red; */
     width: 100%;
   }
+  .ContentDiv{
+    background-color: #0a192f;
+    }
+    .contactContent{
+      max-width: 100%;
+      font-size: 1em;
+    }
+    .contactList{
+      text-align: left;
+      padding: none;
+    }
+    .contactContainer{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+    }
 
   .titleResume{
     padding-top: 70px;
@@ -616,14 +671,12 @@ flex-direction: column;
   .nameText{
     text-align: center;
   }
-  .ContentDiv{
-    padding: 0px 50px
-  }
+
   .navContainer{
     display: flex;
     justify-content: space-evenly;
     justify-content: center;
-    height: 10vh;
+    height: 8vh;
     z-index: 4;
     /* border-bottom: 1px solid powderblue; */
     position: fixed;
@@ -637,9 +690,31 @@ flex-direction: column;
   .icon{
     display: none;
   }
+
+  /* MODAL */
+  .react-responsive-modal-modal{
+    background-color:#0a192f !important;
+    width: 85%;
+    text-align: center;
+  }
+  .react-responsive-modal-closeButton{
+    background-color: teal !important;
+    width: 8vw
+  }
   /* ##### */
+  /* RESUME */
+  .resumeContainer{
+    padding-top: 30px
+  }
   .title{
     text-align: center;
+    width: 100%;
+    margin-top: 70px;
+  }
+  .titleContact{
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
   }
   .topAboutContainer{
     display: flex;
@@ -650,7 +725,8 @@ flex-direction: column;
   .aboutContainer{
     padding: 0px;
     margin: 0px;
-  }
+  };
+
   .lindseyImage{
     display: none;
   }
@@ -669,4 +745,5 @@ flex-direction: column;
     position: fixed;
     font-size: .5em;
   }
+
 }
