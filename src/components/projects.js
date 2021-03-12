@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
+import SwizzleImages from "../utils/SwizzleImages.JPG";
 
 function AlertDismissible() {
   const [show, setShow] = useState(true);
@@ -48,19 +49,35 @@ export const Projects = () => {
       <div className="title">
         <div>My Work</div>
       </div>
-      <AlertDismissible />
-      <div className="projects">
-        {/* <div className="projectItem">
-          <div>
-            <a href="#">My Project</a>
-            <img src="#" alt="alt text" />
-          </div>
-          <span>
-            This is a description of a project.
-            <p>Tech Stack:</p>
-          </span>
-        </div>
+      {/* <AlertDismissible /> */}
+      <div className="projectBox">
         <div className="projectItem">
+          <a
+            href="https://swizzle-cocktail-hub.vercel.app"
+            className="projectTitle"
+          >
+            Swizzle Cocktail Hub
+            <div className="projectImageContainer">
+              <img
+                src={SwizzleImages}
+                className="projectImage"
+                alt="Swizzle Cocktail Hub"
+              />
+            </div>
+          </a>
+          <a href="swizzle-cocktail-hub.vercel.app" className="projectLink">
+            {" "}
+            Website{" "}
+          </a>
+          <a
+            href="https://github.com/LindseyCason/cocktail"
+            className="projectLink"
+          >
+            {" "}
+            Code{" "}
+          </a>
+        </div>
+        {/* <div className="projectItem">
           <div>
             <a href="#">My Project</a>
             <img src="#" alt="alt text" />

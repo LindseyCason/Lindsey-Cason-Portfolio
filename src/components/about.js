@@ -51,7 +51,7 @@ export const About = () => {
             />
           </div>
 
-          <div className="workingWithText">
+          <div className="recentTech">
             My Recent Technologies
             <div className="table">
               <div className="tright">

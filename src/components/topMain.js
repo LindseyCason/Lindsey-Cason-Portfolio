@@ -1,5 +1,6 @@
 import React from "react";
 import { Contact } from "./Contact";
+import ContactForm from "./ContactForm";
 
 export const TopMain = () => {
   return (
@@ -18,6 +19,7 @@ export const TopMain = () => {
         </p>
       </div>
       <Contact />
+      {/* <ContactForm /> */}
     </div>
   );
 };
